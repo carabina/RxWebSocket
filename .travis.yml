@@ -4,9 +4,9 @@ language: objective-c
 podfile: Example/Podfile
 
 before_install:
-  - which wstest
-  - which pip
-#  - which xcpretty
+  - echo $(which wstest)
+  - echo $(which pip)
+#  - echo $(which xcpretty)
   - gem install cocoapods -v '1.2.1'
   - pod --version
   - pod repo update
